@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mi Blog Rosa</title>
+    <style>
+        /* Estilos Generales "Rositas" */
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            /* Fuente cuestionable pero "linda" */
+            background-color: #FFF0F5;
+            /* LavenderBlush */
+            color: #FF69B4;
+            /* HotPink - ERROR 3: Contraste insuficiente sobre fondo claro */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* ERROR 4: Eliminar el foco del teclado (outline: none) */
+        *:focus {
+            outline: none;
+        }
+
+        /* Layout con DIVs (Divitis) en lugar de <header> o <nav> */
+        .cabecera-falsa {
+            background-color: #FFB6C1;
+            /* LightPink */
+            padding: 20px;
+            width: 100%;
+        }
+
+        .menu-div {
+            margin-top: 10px;
+        }
+
+        .boton-menu {
+            /* Parecen botones pero son SPANs */
+            background-color: white;
+            color: #FFC0CB;
+            /* Pink - ERROR 3: Contraste bajísimo para texto */
+            padding: 8px 15px;
+            margin: 0 5px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 12px;
+            /* ERROR 5: Texto muy pequeño */
+        }
+
+        /* Contenedor principal sin etiqueta <main> */
+        .contenedor {
+            width: 800px;
+            /* ERROR 6: Ancho fijo (no responsive) */
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            min-height: 500px;
+        }
+
+        h1 {
+            color: #FFC0CB;
+            /* Pink muy claro - Difícil de leer */
+        }
+
+        /* Enlaces que no parecen enlaces */
+        a {
+            color: #FF69B4;
+            text-decoration: none;
+            /* ERROR 7: Sin subrayado, solo se diferencia por color (y poco) */
+        }
+
+        /* Formulario "bonito" pero inaccesible */
+        input[type="text"],
+        input[type="email"] {
+            border: 2px solid #FFC0CB;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            color: #FF69B4;
+        }
+
+        ::placeholder {
+            color: #FFC0CB;
+            /* Placeholder muy claro */
+        }
+
+        /* Tabla decorativa (ERROR 8: Uso de tablas para maquetar contenido simple) */
+        .tabla-layout {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cabecera-falsa">
+        <div style="font-size: 30px; font-weight: bold; color: white;">🌸 Mi Mundo Rosa 🌸</div>
+        <div class="menu-div">
+            <span class="boton-menu">Inicio</span>
+            <span class="boton-menu">Sobre mí</span>
+            <span class="boton-menu">Contacto</span>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <h1>¡Bienvenidos a mi espacio!</h1>
+        <p>Este es un lugar seguro para compartir pensamientos dulces.</p>
+
+        <img src="https://via.placeholder.com/400x200/FFC0CB/FFFFFF?text=Imagen+Decorativa" width="400" />
+
+        <p>
+            Me encanta el diseño web, pero a veces olvido algunas reglas importantes.
+            Si quieres leer mi último artículo sobre moda, <a href="#">pincha aquí</a>. </p>
+
+        <br><br>
+
+        <div style="background-color: #FFF0F5; padding: 20px; border-radius: 20px;">
+            <p>Suscríbete a la newsletter 🎀</p>
+            <form>
+                <input type="text" placeholder="Tu nombre...">
+                <input type="email" placeholder="Tu correo...">
+                <input type="image" src="https://via.placeholder.com/30/FF69B4/FFFFFF?text=>" />
+            </form>
+        </div>
+
+        <br>
+
+        <table class="tabla-layout" border="1" style="border-collapse: collapse; border-color: #FFC0CB;">
+            <tr>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miércoles</td>
+            </tr>
+            <tr>
+                <td>Yoga</td>
+                <td>Pilates</td>
+                <td>Meditación</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div style="margin-top: 50px; color: #FFC0CB;">
+        © 2024 - Diseñado con amor
+    </div>
+
+</body>
+
+</html>
